@@ -1,0 +1,842 @@
+<!-- index2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Primary SEO Meta Tags -->
+<title>Accel Enterprise — Digital Commerce Experiences</title>
+<meta name="title" content="Accel Enterprise — Digital Commerce Experiences" />
+<meta name="description" content="Accel Enterprise builds high-performance digital commerce experiences that turn attention into growth. Led by CEO Ahmad Raza." />
+<meta name="keywords" content="Accel Enterprise, Digital Commerce, E-Commerce Development, High Conversion Stores, Brand Engineering, Ahmad Raza" />
+<meta name="author" content="Accel Enterprise" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<link rel="canonical" href="https://accelenterprise.net/" />
+
+<!-- Favicons & Web Manifest -->
+<link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+<link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="assets/favicon/site.webmanifest" />
+<meta name="theme-color" content="#0F172A" />
+<meta name="apple-mobile-web-app-title" content="Accel Enterprise" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- Open Graph / Facebook Social Metadata -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://accelenterprise.net/" />
+<meta property="og:title" content="Accel Enterprise — Digital Commerce Experiences" />
+<meta property="og:description" content="We build digital commerce experiences that turn attention into growth. Specialized in luxury e-commerce and brand engineering." />
+<meta property="og:image" content="assets/4.png" />
+<meta property="og:site_name" content="Accel Enterprise" />
+
+<!-- Twitter Card Metadata -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://accelenterprise.net/" />
+<meta name="twitter:title" content="Accel Enterprise — Digital Commerce Experiences" />
+<meta name="twitter:description" content="We build digital commerce experiences that turn attention into growth. Led by CEO Ahmad Raza." />
+<meta name="twitter:image" content="assets/4.png" />
+
+<!-- JSON-LD Structured Data for Search Engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Accel Enterprise",
+  "url": "https://accelenterprise.net/",
+  "logo": "assets/logo.png",
+  "description": "Accel Enterprise builds high-performance digital commerce experiences that turn attention into growth.",
+  "founder": {
+    "@type": "Person",
+    "name": "Ahmad Raza",
+    "jobTitle": "Chief Executive Officer"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "ahmadraza@accelenterprise.net",
+    "telephone": "+13072696214",
+    "contactType": "executive office"
+  }
+}
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,300..900;1,300..900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'accel-blue': '#0066FF',
+          'accel-blue-hover': '#0052CC',
+          'accel-bg': '#EEF2F6',
+          'accel-bg-2': '#F8FAFC',
+          'accel-dark': '#0F172A',
+        },
+        fontFamily: {
+          sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+          serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        }
+      }
+    }
+  }
+</script>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Lenis Smooth Scroll CSS -->
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.min.css" />
+
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" href="style2.css" />
+</head>
+<body class="bg-accel-bg font-sans text-accel-dark antialiased">
+
+  <!-- ============== STICKY NAV ============== -->
+  <header id="site-header" class="fixed top-0 left-0 right-0 z-[1000] w-full max-w-[1440px] mx-auto px-3 sm:px-4 pt-3 sm:pt-4 transition-all duration-300 pointer-events-none">
+    <div id="nav-inner" class="relative bg-white rounded-full p-2 sm:p-2.5 flex items-center justify-between shadow-[0_2px_30px_-8px_rgba(15,23,42,0.12)] border border-black/[0.03] transition-all duration-300 pointer-events-auto">
+
+      <!-- Left: Logo -->
+      <a href="#" class="flex items-center gap-2 group z-10" aria-label="Accel Enterprise home">
+        <img src="assets/logo.png" alt="Accel Enterprise logo" class="w-9 h-9 sm:w-10 sm:h-10 object-contain rounded-full transition-transform duration-300 group-hover:scale-105" />
+        <span class="text-[13px] font-bold tracking-wider text-slate-900">ACCEL</span>
+      </a>
+
+      <!-- Middle: Nav Links (Centered, Hidden on Top, Appears on Scroll) -->
+      <nav id="desktop-nav-links" class="hidden md:flex items-center gap-1 sm:gap-1.5 absolute left-1/2 -translate-x-1/2">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#products" class="nav-link">Shop</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right: Let's talk button + Mobile menu button -->
+      <div class="flex items-center gap-3 sm:gap-4 z-10">
+        <!-- Desktop CTA -->
+        <a href="#contact" class="hidden md:flex items-center gap-2 bg-accel-dark hover:bg-slate-900 transition-colors duration-300 rounded-full pl-4 pr-1 py-1 group">
+          <span class="roll-text text-white text-[13px] font-medium" data-text="Let's talk">
+            <span class="roll-current">Let's talk</span>
+            <span class="roll-next">Let's talk</span>
+          </span>
+          <span class="w-7 h-7 bg-white rounded-full flex items-center justify-center">
+            <svg class="w-3.5 h-3.5 text-accel-dark transition-transform duration-300 arrow-rotate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden bg-accel-dark hover:bg-slate-900 transition-colors duration-300 w-10 h-10 rounded-full flex items-center justify-center" aria-label="Open menu">
+          <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero relative h-screen max-h-screen w-full overflow-hidden flex flex-col pt-16 sm:pt-20 pb-4 sm:pb-6">
+
+    <!-- Hero Image Background -->
+    <div class="video-background-layer absolute inset-0 z-0 pointer-events-none overflow-hidden" aria-hidden="true">
+      <img
+        src="assets/2.png"
+        alt="Accel Enterprise Hero Background"
+        class="w-full h-full object-cover object-center pointer-events-none transition-transform duration-700 ease-out"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
+      />
+      <div class="video-overlay absolute inset-0 bg-slate-900/10 pointer-events-none"></div>
+      <div class="shader-grain absolute inset-0 pointer-events-none z-10"></div>
+      <div class="shader-glass absolute inset-0 pointer-events-none z-10"></div>
+    </div>
+
+    <!-- ============== HERO CONTENT ============== -->
+    <div class="relative z-20 h-full w-full max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12 pt-4 pb-2 flex flex-col justify-between">
+      
+      <!-- Main Hero Grid Layout: Center-aligned on Mobile, Left-aligned on Desktop -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center justify-center my-auto py-2 sm:py-4">
+        
+        <!-- Left: ACCEL ENTERPRISE Headline (Centered on mobile, left on desktop) -->
+        <div class="lg:col-span-6 flex flex-col items-center lg:items-start text-center lg:text-left justify-center lg:pr-4 mx-auto lg:mx-0 w-full">
+          <h1 class="reveal font-black text-slate-900 hero-main-title select-none mx-auto lg:mx-0">
+            <span class="line-accel block text-center lg:text-left">ACCEL</span>
+            <span class="line-enterprise block">ENTERPRISE</span>
+          </h1>
+        </div>
+
+        <!-- Right: Dual-Column Vertical Moving Carousel -->
+        <div class="lg:col-span-6 h-[290px] sm:h-[330px] lg:h-[350px] overflow-hidden relative rounded-3xl bg-white/40 backdrop-blur-md border border-white/60 p-3 shadow-xl flex gap-3 -mt-2 lg:-mt-4">
+          
+          <!-- Top & Bottom Soft Fading Masks -->
+          <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white/90 to-transparent z-20 pointer-events-none rounded-t-3xl"></div>
+          <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-white/90 to-transparent z-20 pointer-events-none rounded-b-3xl"></div>
+
+          <!-- Column 1 (Scrolls Upward) -->
+          <div class="flex-1 overflow-hidden relative">
+            <div class="vertical-marquee-up flex flex-col gap-3">
+              <!-- Group 1 -->
+              <div class="flex flex-col gap-3 flex-shrink-0">
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80" alt="AURA concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Beauty</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">AURA Concept</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$88.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" alt="NOMA concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Audio</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">NOMA Headphones</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$349.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=300&q=80" alt="FORM concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Furniture</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">FORM Chair</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$850.00</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Group 2 (Exact Duplicate) -->
+              <div class="flex flex-col gap-3 flex-shrink-0" aria-hidden="true">
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=300&q=80" alt="AURA concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Beauty</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">AURA Concept</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$88.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=300&q=80" alt="NOMA concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Audio</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">NOMA Headphones</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$349.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=300&q=80" alt="FORM concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Furniture</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">FORM Chair</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$850.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2 (Scrolls Downward) -->
+          <div class="flex-1 overflow-hidden relative hidden sm:block">
+            <div class="vertical-marquee-down flex flex-col gap-3">
+              <!-- Group A -->
+              <div class="flex flex-col gap-3 flex-shrink-0">
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=80" alt="VELA concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Fragrance</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">VELA Fragrance</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$65.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=300&q=80" alt="KINETIC concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Optics</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">KINETIC Lens</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$420.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=300&q=80" alt="CHRONO concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Wearables</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">CHRONO Watch</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$590.00</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Group B (Exact Duplicate) -->
+              <div class="flex flex-col gap-3 flex-shrink-0" aria-hidden="true">
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=80" alt="VELA concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Fragrance</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">VELA Fragrance</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$65.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=300&q=80" alt="KINETIC concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Optics</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">KINETIC Lens</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$420.00</p>
+                  </div>
+                </div>
+                <div class="bg-white rounded-2xl p-3 shadow-sm border border-slate-100 flex items-center gap-3">
+                  <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=300&q=80" alt="CHRONO concept" class="w-14 h-14 rounded-xl object-cover flex-shrink-0" />
+                  <div class="min-w-0">
+                    <span class="text-[11px] font-medium text-slate-400 uppercase tracking-wider">Wearables</span>
+                    <h4 class="text-sm font-semibold text-slate-900 truncate">CHRONO Watch</h4>
+                    <p class="text-xs text-accel-blue font-semibold">$590.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Cornered Secondary Tagline & CTA Button (Centered on mobile, left/right on desktop) -->
+      <div class="reveal flex flex-col sm:flex-row items-center lg:items-end justify-center lg:justify-between text-center lg:text-left gap-5 sm:gap-6 pt-4 sm:pt-6 border-t border-black/[0.06] w-full">
+        
+        <!-- Cornered Tagline -->
+        <p class="text-slate-800 text-sm sm:text-base lg:text-lg font-medium leading-relaxed max-w-[500px] text-center lg:text-left mx-auto lg:mx-0">
+          We build digital commerce experiences that turn attention into growth.
+        </p>
+
+        <!-- Primary CTA -->
+        <a href="#contact" class="btn-primary btn-lg group flex-shrink-0 mx-auto lg:mx-0">
+          <span class="roll-text text-white text-base font-semibold" data-text="Talk to us">
+            <span class="roll-current">Talk to us</span>
+            <span class="roll-next">Talk to us</span>
+          </span>
+          <span class="arrow-circle bg-white">
+            <svg class="w-4 h-4 text-accel-blue arrow-rotate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== ABOUT ============== -->
+  <section id="about" class="bg-white w-full">
+    <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12 py-20 sm:py-28 lg:py-36">
+
+      <!-- Badge row -->
+      <div class="reveal flex items-center justify-center sm:justify-start gap-3 mb-10 sm:mb-14">
+        <span class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-slate-300 text-[12px] font-medium text-slate-700">1</span>
+        <span class="inline-flex items-center bg-slate-100 rounded-full px-3.5 py-1.5 text-[12px] tracking-wide text-slate-700 font-medium">Inside Accel</span>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="reveal section-heading text-center sm:text-left max-w-[1100px] mx-auto sm:mx-0">
+        Built around commerce,<br />
+        designed around your customer.
+      </h2>
+
+      <!-- Copy + CTA -->
+      <div class="reveal mt-10 sm:mt-14 max-w-[720px] mx-auto sm:mx-0 sm:ml-auto sm:text-right">
+        <p class="text-[15px] sm:text-[17px] leading-relaxed text-slate-600">
+          Accel Enterprise helps businesses turn products into powerful digital experiences. From e-commerce strategy and storefronts to product presentation and conversion-focused experiences, we build digital commerce systems designed to move brands forward.
+        </p>
+
+        <div class="mt-8 sm:mt-10">
+          <a href="#contact" class="btn-primary group">
+            <span class="roll-text text-white text-sm font-medium" data-text="Meet Accel Enterprise">
+              <span class="roll-current">Meet Accel Enterprise</span>
+              <span class="roll-next">Meet Accel Enterprise</span>
+            </span>
+            <span class="arrow-circle bg-white">
+              <svg class="w-3.5 h-3.5 text-accel-blue arrow-rotate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Imagery -->
+      <div class="mt-14 sm:mt-20 grid grid-cols-1 sm:grid-cols-12 gap-4 sm:gap-6">
+        <div class="reveal sm:col-span-5">
+          <div class="rounded-xl sm:rounded-2xl overflow-hidden bg-slate-100 aspect-[438/346]">
+            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=900&q=80" alt="Curated commerce experience" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+        </div>
+        <div class="reveal sm:col-span-7 sm:mt-16">
+          <div class="rounded-xl sm:rounded-2xl overflow-hidden bg-slate-100 aspect-[3/2]">
+            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80" alt="Digital storefront in production" class="w-full h-full object-cover" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FEATURED PRODUCTS ============== -->
+  <section id="products" class="bg-accel-bg-2 w-full">
+    <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12 py-20 sm:py-28 lg:py-36">
+
+      <!-- Badge row -->
+      <div class="reveal flex items-center justify-center sm:justify-start gap-3 mb-10 sm:mb-14">
+        <span class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-slate-300 text-[12px] font-medium text-slate-700">2</span>
+        <span class="inline-flex items-center bg-white rounded-full px-3.5 py-1.5 text-[12px] tracking-wide text-slate-700 font-medium border border-black/[0.04]">Featured commerce</span>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="reveal section-heading text-center sm:text-left">
+        Products worth<br />stopping for.
+      </h2>
+
+      <!-- Product grid -->
+      <div class="mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 lg:gap-7">
+
+        <!-- PRODUCT 01 — AURA -->
+        <article class="reveal product-card group cursor-pointer" data-product-id="aura">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden relative bg-slate-200">
+            <img src="https://images.unsplash.com/photo-1556228852-80b6e5eeff06?auto=format&fit=crop&w=1000&q=80" alt="AURA — premium minimalist skincare bottle" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+            <div class="absolute inset-0 flex items-end justify-end p-4 sm:p-5">
+              <button class="product-btn" aria-label="Explore AURA">
+                <span class="product-btn-icon">
+                  <svg class="w-4 h-4 arrow-rotate text-slate-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="product-btn-text">Explore</span>
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <p class="text-[13px] text-slate-500">Featured Concept · Beauty</p>
+              <span class="text-xs font-semibold text-accel-blue">$88.00</span>
+            </div>
+            <h3 class="text-[15px] font-semibold mt-1 tracking-wide text-slate-900">AURA</h3>
+            <p class="text-[13px] text-slate-500 mt-1.5 leading-relaxed max-w-[420px]">A minimal product experience designed to make premium beauty feel effortless.</p>
+          </div>
+        </article>
+
+        <!-- PRODUCT 02 — NOMA -->
+        <article class="reveal product-card group cursor-pointer" data-product-id="noma">
+          <div class="aspect-square rounded-2xl overflow-hidden relative bg-slate-900">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80" alt="NOMA — premium wireless headphones" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+            <div class="absolute inset-0 flex items-end justify-end p-4 sm:p-5">
+              <button class="product-btn product-btn-dark" aria-label="View NOMA product">
+                <span class="product-btn-icon">
+                  <svg class="w-4 h-4 arrow-rotate text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="product-btn-text">View product</span>
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <p class="text-[13px] text-slate-500">Featured Concept · Lifestyle</p>
+              <span class="text-xs font-semibold text-accel-blue">$349.00</span>
+            </div>
+            <h3 class="text-[15px] font-semibold mt-1 tracking-wide text-slate-900">NOMA</h3>
+            <p class="text-[13px] text-slate-500 mt-1.5 leading-relaxed max-w-[420px]">Premium consumer electronics, framed as a quiet object of design rather than a device.</p>
+          </div>
+        </article>
+
+        <!-- PRODUCT 03 — FORM -->
+        <article class="reveal product-card group cursor-pointer" data-product-id="form">
+          <div class="aspect-[4/3] rounded-2xl overflow-hidden relative bg-slate-200">
+            <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=1000&q=80" alt="FORM — sculptural minimalist furniture" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+            <div class="absolute inset-0 flex items-end justify-end p-4 sm:p-5">
+              <button class="product-btn" aria-label="Discover FORM">
+                <span class="product-btn-icon">
+                  <svg class="w-4 h-4 arrow-rotate text-slate-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="product-btn-text">Discover</span>
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <p class="text-[13px] text-slate-500">Featured Concept · Home</p>
+              <span class="text-xs font-semibold text-accel-blue">$850.00</span>
+            </div>
+            <h3 class="text-[15px] font-semibold mt-1 tracking-wide text-slate-900">FORM</h3>
+            <p class="text-[13px] text-slate-500 mt-1.5 leading-relaxed max-w-[420px]">Sculptural furniture presented as quiet architecture for the modern interior.</p>
+          </div>
+        </article>
+
+        <!-- PRODUCT 04 — VELA -->
+        <article class="reveal product-card group cursor-pointer" data-product-id="vela">
+          <div class="aspect-square rounded-2xl overflow-hidden relative bg-slate-100">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1000&q=80" alt="VELA — premium wellness fragrance" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" loading="lazy" />
+            <div class="absolute inset-0 flex items-end justify-end p-4 sm:p-5">
+              <button class="product-btn" aria-label="Explore VELA product">
+                <span class="product-btn-icon">
+                  <svg class="w-4 h-4 arrow-rotate text-slate-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+                <span class="product-btn-text">Explore product</span>
+              </button>
+            </div>
+          </div>
+          <div class="mt-4">
+            <div class="flex items-center justify-between">
+              <p class="text-[13px] text-slate-500">Featured Concept · Wellness</p>
+              <span class="text-xs font-semibold text-accel-blue">$65.00</span>
+            </div>
+            <h3 class="text-[15px] font-semibold mt-1 tracking-wide text-slate-900">VELA</h3>
+            <p class="text-[13px] text-slate-500 mt-1.5 leading-relaxed max-w-[420px]">An editorial fragrance concept built around restraint, ritual, and soft light.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Contact for More Button -->
+      <div class="mt-14 sm:mt-20 flex justify-center reveal">
+        <a href="#contact" class="btn-contact-more group">
+          <span class="roll-text text-white text-base font-semibold" data-text="Contact for More">
+            <span class="roll-current">Contact for More</span>
+            <span class="roll-next">Contact for More</span>
+          </span>
+          <span class="arrow-circle bg-white">
+            <svg class="w-4 h-4 text-slate-900 arrow-rotate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== TESTIMONIALS ============== -->
+  <section id="testimonials" class="bg-accel-bg-2 w-full py-20 sm:py-28 lg:py-36 overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
+
+      <!-- Header Row -->
+      <div class="reveal flex flex-col sm:flex-row sm:items-end justify-between mb-4 sm:mb-6 gap-6">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-slate-300 text-[12px] font-medium text-slate-700">3</span>
+            <span class="inline-flex items-center bg-white rounded-full px-3.5 py-1.5 text-[12px] tracking-wide text-slate-700 font-medium border border-black/[0.04]">WHAT OUR CLIENTS SAY</span>
+          </div>
+          <h2 class="section-heading">
+            Here's what our clients say<br />about building with us.
+          </h2>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex items-center gap-3">
+          <button id="testimonial-prev" class="w-12 h-12 rounded-full border border-slate-200 bg-white hover:bg-slate-900 hover:text-white text-slate-800 flex items-center justify-center transition-all duration-300 shadow-sm" aria-label="Previous testimonial">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <span id="testimonial-counter" class="text-sm font-semibold text-slate-500 tabular-nums px-2 select-none">01 / 08</span>
+          <button id="testimonial-next" class="w-12 h-12 rounded-full border border-slate-200 bg-white hover:bg-slate-900 hover:text-white text-slate-800 flex items-center justify-center transition-all duration-300 shadow-sm" aria-label="Next testimonial">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Staggered Card Stack Container (Increased Gap Below Heading) -->
+      <div id="testimonial-stack" class="relative mt-12 sm:mt-16 lg:mt-20 min-h-[340px] sm:min-h-[300px] w-full flex items-center justify-center">
+        <!-- Rendered dynamically via script2.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== CONTACT ============== -->
+  <section id="contact" class="bg-accel-bg-2 w-full py-20 sm:py-28 lg:py-36">
+    <div class="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
+      
+      <!-- Contact Window / Panel -->
+      <div class="reveal bg-white border border-slate-200/80 rounded-3xl p-8 sm:p-12 lg:p-16 shadow-xl">
+        
+        <!-- Executive Profile Header -->
+        <div class="mb-10 sm:mb-14">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full border border-slate-300 text-[12px] font-medium text-slate-700">4</span>
+            <span class="inline-flex items-center bg-slate-100 rounded-full px-3.5 py-1.5 text-[12px] tracking-wide text-slate-700 font-medium">Direct Executive Contact</span>
+          </div>
+          <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-2">
+            Ahmad Raza
+          </h2>
+          <p class="text-sm sm:text-base font-semibold tracking-[0.2em] text-accel-blue uppercase">
+            C.E.O
+          </p>
+        </div>
+
+        <!-- Bento / Grid Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
+          
+          <!-- Company Card -->
+          <div class="md:col-span-6 bg-slate-50 border border-slate-200/70 rounded-2xl p-6 transition-all duration-300 hover:border-accel-blue/40 hover:shadow-md">
+            <div class="w-10 h-10 bg-accel-blue/10 text-accel-blue rounded-full flex items-center justify-center mb-4">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            </div>
+            <p class="text-xs uppercase tracking-wider text-slate-400 font-semibold mb-1">Company</p>
+            <h3 class="text-xl font-bold text-slate-900 tracking-tight">Accel Enterprise</h3>
+            <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">Specialized in eCommerce and digital commerce solutions.</p>
+          </div>
+
+          <!-- Email Card (Inversed Blue Accent) -->
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmadraza@accelenterprise.net" target="_blank" rel="noopener noreferrer" class="md:col-span-6 bg-accel-blue hover:bg-blue-600 text-white rounded-2xl p-6 transition-all duration-300 shadow-lg hover:shadow-xl group block">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-10 h-10 bg-white/20 text-white group-hover:bg-white group-hover:text-accel-blue transition-colors duration-300 rounded-full flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <svg class="w-4 h-4 text-white/70 group-hover:text-white transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <p class="text-xs uppercase tracking-wider text-sky-100 font-semibold mb-1">Direct Email</p>
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight break-all">ahmadraza@accelenterprise.net</h3>
+            <p class="text-xs text-sky-100/90 mt-1.5">Click to send direct email</p>
+          </a>
+
+          <!-- Phone Card (Inversed Blue Accent) -->
+          <a href="tel:+13072696214" class="md:col-span-6 bg-accel-blue hover:bg-blue-600 text-white rounded-2xl p-6 transition-all duration-300 shadow-lg hover:shadow-xl group block">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-10 h-10 bg-white/20 text-white group-hover:bg-white group-hover:text-accel-blue transition-colors duration-300 rounded-full flex items-center justify-center">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <svg class="w-4 h-4 text-white/70 group-hover:text-white transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <p class="text-xs uppercase tracking-wider text-sky-100 font-semibold mb-1">Executive Line</p>
+            <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight tabular-nums">13072696214</h3>
+            <p class="text-xs text-sky-100/90 mt-1.5">Mon - Fri · Direct phone line</p>
+          </a>
+
+          <!-- Project Consultation Card -->
+          <div class="md:col-span-6 bg-slate-900 border border-slate-800 rounded-2xl p-6 text-white flex flex-col justify-between">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-sky-400 font-semibold mb-1">Start a Project</p>
+              <h3 class="text-xl font-bold text-white tracking-tight">Ready to accelerate your next store?</h3>
+              <p class="text-xs text-slate-300 mt-2 leading-relaxed">Let's discuss how Accel Enterprise can build your digital commerce operations.</p>
+            </div>
+            <div class="mt-6">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ahmadraza@accelenterprise.net" target="_blank" rel="noopener noreferrer" class="btn-primary group inline-flex">
+                <span class="roll-text text-white text-xs font-medium" data-text="Talk to Ahmad">
+                  <span class="roll-current">Talk to Ahmad</span>
+                  <span class="roll-next">Talk to Ahmad</span>
+                </span>
+                <span class="arrow-circle bg-white">
+                  <svg class="w-3.5 h-3.5 text-accel-blue arrow-rotate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============== ANIMATED GRADIENT FOOTER ============== -->
+  <footer id="site-footer" class="relative w-full bg-slate-950 text-white overflow-hidden pt-20 sm:pt-28 pb-12">
+    <!-- SVG Scroll-Driven Gradient Glow Background -->
+    <div id="footer-gradient-layer" class="absolute inset-0 pointer-events-none transition-opacity duration-300" aria-hidden="true">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 900">
+        <defs>
+          <filter id="ruixen-glow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur stdDeviation="80" />
+          </filter>
+
+          <linearGradient id="band1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#340B05" stop-opacity="0.9" />
+            <stop offset="50%" stop-color="#0358F7" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#5092C7" stop-opacity="0.7" />
+          </linearGradient>
+
+          <linearGradient id="band2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FA3D1D" stop-opacity="0.8" />
+            <stop offset="40%" stop-color="#FFD400" stop-opacity="0.7" />
+            <stop offset="80%" stop-color="#FD02F5" stop-opacity="0.65" />
+            <stop offset="100%" stop-color="#0358F7" stop-opacity="0.5" />
+          </linearGradient>
+        </defs>
+
+        <rect x="-100" y="200" width="800" height="700" fill="url(#band1)" filter="url(#ruixen-glow)" transform="rotate(-15 300 500)" />
+        <rect x="500" y="100" width="900" height="800" fill="url(#band2)" filter="url(#ruixen-glow)" transform="rotate(20 900 400)" />
+        <rect x="200" y="400" width="1000" height="500" fill="#0358F7" opacity="0.35" filter="url(#ruixen-glow)" />
+      </svg>
+    </div>
+
+    <div class="relative z-10 max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-12">
+      <!-- Main Footer Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10">
+        <!-- Brand Info -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="Accel Enterprise logo" class="w-10 h-10 object-contain rounded-full bg-white/10 p-0.5" />
+            <span class="text-xl font-bold tracking-tight text-white">Accel Enterprise</span>
+          </div>
+
+          <p class="text-slate-300 text-sm leading-relaxed max-w-sm">
+            Helping businesses build better ecommerce experiences and grow online.
+          </p>
+        </div>
+
+        <!-- Links Column (Company Only Aligned to Right) -->
+        <div class="md:col-span-7 flex justify-start md:justify-end">
+          <div>
+            <h4 class="text-xs font-semibold text-white uppercase tracking-wider mb-4">COMPANY</h4>
+            <ul class="space-y-2.5 text-sm text-slate-400">
+              <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+              <li><a href="#products" class="hover:text-white transition-colors">Our Work</a></li>
+              <li><a href="#testimonials" class="hover:text-white transition-colors">Testimonials</a></li>
+              <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="pt-8 border-t border-white/10 relative flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        <!-- Left Aligned Copyright -->
+        <p class="text-center sm:text-left">© 2026 Accel Enterprise. All rights reserved.</p>
+
+        <!-- Center Aligned Hassaan Akhtar Credit -->
+        <p class="sm:absolute sm:left-1/2 sm:-translate-x-1/2 text-center">
+          Made by <a href="https://hassaanakhtar.com/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white font-medium transition-colors duration-300 underline decoration-slate-600 hover:decoration-white underline-offset-4">@Hassaan Akhtar</a>
+        </p>
+
+        <!-- Right Aligned Privacy Policy Link -->
+        <a href="privacy.html" class="hover:text-white transition-colors text-center sm:text-right underline decoration-slate-600 hover:decoration-white underline-offset-4">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============== PRODUCT QUICK VIEW MODAL ============== -->
+  <div id="product-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 lg:p-8" aria-hidden="true">
+    <div class="modal-backdrop absolute inset-0 bg-slate-900/60 backdrop-blur-md"></div>
+
+    <div class="modal-card relative w-full max-w-4xl bg-white rounded-3xl overflow-hidden shadow-2xl z-10 max-h-[90vh] flex flex-col md:flex-row border border-white/40">
+      
+      <!-- Close Button -->
+      <button id="close-modal" class="absolute top-4 right-4 z-20 w-10 h-10 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-full flex items-center justify-center transition-colors shadow-sm" aria-label="Close product modal">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Left Side: Product Image -->
+      <div class="w-full md:w-1/2 bg-slate-100 relative min-h-[260px] sm:min-h-[320px] md:min-h-full flex items-center justify-center overflow-hidden">
+        <img id="modal-img" src="" alt="" class="w-full h-full object-cover" />
+        <span id="modal-badge" class="absolute top-4 left-4 bg-white/90 backdrop-blur-md text-accel-blue text-xs font-semibold px-3 py-1 rounded-full shadow-sm"></span>
+      </div>
+
+      <!-- Right Side: Details -->
+      <div class="w-full md:w-1/2 p-6 sm:p-8 flex flex-col justify-between overflow-y-auto max-h-[60vh] md:max-h-[85vh]">
+        <div>
+          <p id="modal-category" class="text-xs font-medium uppercase tracking-wider text-slate-500 mb-1"></p>
+          <h3 id="modal-title" class="text-2xl sm:text-3xl font-semibold text-slate-900 tracking-tight mb-1"></h3>
+          <p id="modal-tagline" class="text-xs font-semibold text-accel-blue mb-4"></p>
+
+          <div class="flex items-center justify-between py-3 border-y border-slate-100 mb-4">
+            <span id="modal-price" class="text-2xl font-bold text-slate-900"></span>
+            <span id="modal-rating" class="text-xs font-semibold text-slate-600 bg-slate-100 px-2.5 py-1 rounded-full"></span>
+          </div>
+
+          <p id="modal-desc" class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5"></p>
+
+          <div class="space-y-2 mb-6">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-slate-800">Key Features & Details</h4>
+            <ul id="modal-specs" class="text-xs text-slate-600 space-y-1.5 list-disc list-inside"></ul>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center gap-3">
+          <div class="flex items-center border border-slate-200 rounded-full px-3 py-2 bg-slate-50">
+            <button id="qty-minus" class="w-6 h-6 flex items-center justify-center text-slate-500 hover:text-slate-900 font-bold text-sm" aria-label="Decrease quantity">-</button>
+            <span id="qty-val" class="w-8 text-center text-sm font-semibold text-slate-800">1</span>
+            <button id="qty-plus" class="w-6 h-6 flex items-center justify-center text-slate-500 hover:text-slate-900 font-bold text-sm" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button id="add-to-cart-btn" class="w-full sm:flex-1 bg-accel-blue hover:bg-slate-900 text-white font-medium text-sm py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2 group">
+            <span id="add-to-cart-text">Purchase</span>
+            <svg class="w-4 h-4 text-white transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============== MOBILE MENU ============== -->
+  <div id="mobile-menu" class="fixed inset-0 z-50 hidden" aria-hidden="true">
+    <div class="menu-backdrop absolute inset-0"></div>
+    <div class="menu-sheet absolute bottom-0 left-0 right-0 mx-3 mb-3 bg-white rounded-2xl p-6 pt-5 shadow-2xl">
+      <div class="flex items-center justify-between mb-6">
+        <div class="flex items-center gap-2.5">
+          <img src="assets/logo.png" alt="Accel Enterprise logo" class="w-8 h-8 object-contain rounded-full" />
+          <span class="text-[12px] tracking-[0.18em] uppercase text-slate-500 font-medium">Menu</span>
+        </div>
+        <button id="close-menu" class="w-9 h-9 bg-slate-100 hover:bg-slate-200 transition-colors rounded-full flex items-center justify-center" aria-label="Close menu">
+          <svg class="w-4 h-4 text-slate-700" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-1">
+        <a href="#about" class="menu-link text-3xl sm:text-4xl font-medium text-slate-900 py-2.5">About</a>
+        <a href="#products" class="menu-link text-3xl sm:text-4xl font-medium text-slate-900 py-2.5">Shop</a>
+        <a href="#contact" class="menu-link text-3xl sm:text-4xl font-medium text-slate-900 py-2.5">Contact</a>
+      </nav>
+
+      <a href="mailto:ahmadraza@accelenterprise.net" class="mt-7 flex items-center justify-between bg-accel-dark hover:bg-slate-900 transition-colors duration-300 rounded-full pl-5 pr-1 py-1 group">
+        <span class="text-white text-sm font-medium">Talk to Accel</span>
+        <span class="w-9 h-9 bg-white rounded-full flex items-center justify-center">
+          <svg class="w-4 h-4 text-accel-dark transition-transform duration-300 group-hover:rotate-[-45deg]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Lenis Smooth Scroll Script -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <!-- GSAP & ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- Main Script -->
+  <script src="script2.js"></script>
+</body>
+</html>
